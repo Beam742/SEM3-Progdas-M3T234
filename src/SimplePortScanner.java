@@ -99,7 +99,7 @@ class PortScanner {
             socket.close();
             Logger.log("Port " + port + " is open on " + ip);
         } catch (IOException e) {
-            Logger.log("Port " + port + " is closed on " + ip);//adding log for closed port
+            //Logger.log("Port " + port + " is closed on " + ip);
         } catch (Exception e) {
             Logger.log("An error occurred while scanning port " + port + ": " + e.getMessage());
         }
